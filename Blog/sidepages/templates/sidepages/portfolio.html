@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <style>
+            .fa {
+                padding: 16px;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+                color:mediumvioletred;
+                transition: 0.3s;
+            }
+
+            .fa:hover {
+                color:midnightblue;
+            }
+
+            .card-custom {
+                max-width: 30%;
+            }
+            
+            html body {
+                background-color:ghostwhite;
+            }
+        </style>
+
+        <title>D' Andrëw Box</title>
+    </head>
+    <body>        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand font-weight-bolder" href="{% url 'home' %}">Andrëw's Box</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+                    <a class="nav-item nav-link active" href="{% url 'portfolio' %}">Portfolio</a>
+                    <a class="nav-item nav-link" href="{% url 'contact' %}">Contact</a>
+                </div>
+            </div>
+        </nav>
+        
+        <h2 class="text-center font-weight-bold h1" style="padding-top: 0.75em;">Some of my Creations</h2>
+
+        <div class="container">
+            <p class="text-center text-monospace">
+                As a developer or as pixel artist
+            </p>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="card card-custom mx-2 mb-3">
+                    <img src="../../../media/107794396_10221371465549160_6844631543478443809_o.jpg" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mainasutto: I'm not Alone</h5>
+                        <p class="card-text">Fast-paced Metroidvania where your choices matter. <b>[On-going]</b></p>
+                        <a href="#" class="btn btn-primary mt-auto">Check it out</a>
+                    </div>
+                </div>
+
+                <div class="card card-custom mx-2 mb-3">
+                    <img src="../../../media/107794396_10221371465549160_6844631543478443809_o.jpg" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">REGEN</h5>
+                        <p class="card-text">
+                            You have just 10 seconds to exit every room on this infinite maze. Made on 12Hrs to #GBJam.
+                            <br />
+                            <i>(Nov-2014)</i>
+                        </p>
+                        <a href="#" class="btn btn-primary mt-auto">Check it out</a>
+                    </div>
+                </div>
+
+                <div class="card card-custom mx-2 mb-3">
+                    <img src="../../../media/107794396_10221371465549160_6844631543478443809_o.jpg" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mainasutto: Prelude</h5>
+                        <p class="card-text">
+                            Fast-paced hack & slash platformer.
+                            <br />
+                            <br />
+                            <i>(Nov-2020)</i>
+                        </p>
+                        <a href="#" class="btn btn-primary mt-auto">Check it out</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="card card-custom mx-2 mb-3">
+                    <img src="../../../media/107794396_10221371465549160_6844631543478443809_o.jpg" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">[C][H][O][N]</h5>
+                        <p class="card-text">
+                            Wave-survival platformer made to the #GlobalGameJam.
+                            <br/>
+                            <br />
+                            <i>(Jan-2016)</i>
+                        </p>
+                        <a href="#" class="btn btn-primary mt-auto">Check it out</a>
+                    </div>
+                </div>
+
+                <div class="card card-custom mx-2 mb-3">
+                    <img src="../../../media/107794396_10221371465549160_6844631543478443809_o.jpg" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Qactus.cl</h5>
+                        <p class="card-text">
+                            Website mockup from a eco-printing company.
+                            
+                            <br />
+                            <br />
+                            <br />
+                            <i>(Jun-2017)</i>
+                        </p>
+                        <a href="#" class="btn btn-primary mt-auto">Check it out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>       
+    </body>
+</html>

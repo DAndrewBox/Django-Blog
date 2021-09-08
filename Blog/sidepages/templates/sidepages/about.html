@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .fa {
+                padding: 16px;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                font-size: 40px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+                color:mediumvioletred;
+                transition: 0.3s;
+            }
+
+            .fa:hover {
+                color:midnightblue;
+            }
+
+            html body {
+                background-color:ghostwhite;
+            }
+        </style>
+
+        <title>D' Andrëw Box</title>
+    </head>
+    <body>        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand font-weight-bolder" href="{% url 'home' %}">Andrëw's Box</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="{% url 'about' %}">About</a>
+                    <a class="nav-item nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+                    <a class="nav-item nav-link" href="{% url 'contact' %}">Contact</a>
+                </div>
+            </div>
+        </nav>
+        
+        <h2 class="text-center font-weight-bold h1" style="padding-top: 0.75em;">Who is D'Andrëw?</h2>
+        <p class="text-center text-monospace" style="margin-bottom: -.25em;">
+            And why you should give him some coffee
+        </p>
+        <p class="text-center text-monospace" style="margin-bottom: -1em; font-size: x-small;">
+            (Seriously, i need one)
+        </p>
+
+        <div class="container">
+            <br />
+            {% load static %}
+            <img src="{% static 'sidepages/avatar.png' %}" class="img-fluid float-right" style="max-width: 33%; margin-left: 0.75em; border-radius: 50%;">
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit porta nec leo tempus, condimentum ultricies velit conubia eu litora aenean luctus in. Duis nec libero mus lacinia curae mollis eleifend, vitae turpis sodales dis blandit nisi arcu ac, justo curabitur lectus dapibus vivamus ridiculus.
+                <br />
+                <br />
+                Curabitur aliquam semper netus dui etiam mus curae himenaeos, cras euismod nullam id litora urna magnis quis, torquent varius mi cubilia purus ligula habitant. Non phasellus nascetur venenatis condimentum lobortis fusce malesuada, dictum nec fermentum sociosqu consequat massa, placerat imperdiet volutpat molestie leo id. Erat ante egestas aliquam habitasse metus sodales lacus, molestie phasellus cursus mauris lobortis accumsan conubia, tellus vivamus vehicula class ligula dui.
+                <br />
+                <br />            
+                Nec aliquam fermentum curae netus quis habitant in taciti ridiculus, penatibus tincidunt facilisi facilisis parturient placerat mus senectus non primis, diam dignissim pretium faucibus vitae urna dapibus tristique. Fermentum at vivamus porttitor penatibus fringilla est eleifend litora, luctus non vulputate orci facilisis cras consequat pretium, sapien tristique libero neque mus velit hendrerit. Sociis pellentesque at nec lectus lacus penatibus fames malesuada venenatis viverra, iaculis leo curabitur ad etiam ac duis purus id, sollicitudin fringilla orci nulla magna class donec nunc cursus.
+            </p>
+
+            <div class="container mx-auto d-block" style="text-align: center;">
+                <a href="https://www.twitter.com/DAndrewBox_" class="text-decoration-none">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/DAndrewBox" class="text-decoration-none">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://youtube.com/c/DAndrewBox" class="text-decoration-none">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>       
+    </body>
+</html>
